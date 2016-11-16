@@ -56,7 +56,7 @@ Serial.println(test3);
 
 
 
-if (val>600 && val<900){
+if (val>700 && val<750){
   test3=test3+1;
   digitalWrite(LED3, HIGH);
 }
@@ -64,7 +64,7 @@ else {
 digitalWrite(LED3,LOW);
 test3=0;}
 
-  if (val>300 && val<600){
+  if (val>600 && val<700){
     test2=test2+1;
 digitalWrite(LED2, HIGH); 
   }
@@ -72,7 +72,7 @@ else {
 digitalWrite(LED2,LOW);
 test2=0;}
 
-  if (val<300){
+  if (val<600){
   test=test+1;
   digitalWrite(LED, HIGH);
   }
@@ -84,7 +84,7 @@ test=0;
 
 
 
-if (val>600 && val<900 && test3>50){
+if (val>600 && val<750 && test3>50){
   test3=test3+1;
   digitalWrite(LED3, HIGH);
 }
@@ -92,7 +92,7 @@ else {
 digitalWrite(LED3,LOW);
 test3=0;}
 
-  if (val>300 && val<600 && test2>50){
+  if (val>600 && val<700 && test2>50){
     test2=test2+1; 
     digitalWrite(LED2, HIGH); 
   }
@@ -100,7 +100,7 @@ else {
 digitalWrite(LED2,LOW);
 test2=0;}
 
-  if (val<300 && test>50){
+  if (val<600 && test>50){
   test=test+1;
   digitalWrite(LED, HIGH);
   }
